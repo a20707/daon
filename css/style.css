@@ -139,7 +139,7 @@ header>div:nth-of-type(1) .menu-trigger.active span:nth-of-type(3) {
     background-color: #fff;
     transform: translateY(-8px) rotate(-45deg);
 }
-*/
+
 
 
 header>div:nth-of-type(1) .menu-trigger .trigger_menu {
@@ -147,9 +147,7 @@ header>div:nth-of-type(1) .menu-trigger .trigger_menu {
     top:0; right:0;
     width:100%; height:100%;
 }
-
-/*---------버거메뉴 오픈 전체 메뉴---------*/
-
+/*----------버거메뉴 오픈----------*/
 header .all_menu{
     position:fixed;
     top:0; left:0;
@@ -159,11 +157,6 @@ header .all_menu{
     transform: translateY(-100%);
     z-index:3;
     transition:.6s;
-    
-/*
-    opacity: 0;
-    z-index:-99;
-*/
     
 }
 header .all_menu.active{
@@ -187,7 +180,7 @@ header .all_menu>div div:nth-of-type(2) ul li{
 }
 header .all_menu>div div:nth-of-type(2) ul li a{
     display:block;
-    padding:1.3em;
+    padding:3vh;
     font-size:1.6em;
     font-weight:700;
     color:#fff;
@@ -257,7 +250,7 @@ main > section > h3:after{
 .main_rolling .slide .imgs{
     position:relative;
     width:100vw;
-    height:60vw;
+    height:45vw;
     overflow: hidden;
     background-color:beige;
     
@@ -362,7 +355,7 @@ main .main_res div {
 
 main .main_res div h3 {
     background:url('../img/main_calen.png') no-repeat center;
-    background-size:50%;
+    background-size:70%;
     display:inline-block;
     background-color:#fff;
     width:5vw;
@@ -373,7 +366,7 @@ main .main_res div h3 {
 main .main_res ul li>h3:after{
     content:'';
     display:block;
-    width:8vw; height:3px;
+
     background-color:#00b2ca;
     margin:0 auto;
 }
@@ -1011,7 +1004,7 @@ main .sub1_1_2{
 .sub1_2_main .slide{
     position:relative;
     width:70%;
-    height:35vw;
+    height:60vw;
     overflow: hidden;
     margin:0 auto;
     
@@ -1372,8 +1365,7 @@ main .sub2_tab .tab_content {
 main .sub2_tab .tab_content>div{
     width:100%; height:auto; 
     background:#fff;
-    position:absolute;
-    left:0; top:0;
+
 /*    display:none;*/
     
       }
@@ -1526,42 +1518,42 @@ main .sub3_2 table select,input{
 }
 
 
-main .sub3_2 table tr td span:nth-of-type(1){
+main .sub3_2 table tr td div:nth-of-type(1){
     float:left;
     width:60%;
 }
-main .sub3_2 table tr td span:nth-of-type(1) img{
+main .sub3_2 table tr td div:nth-of-type(1) img{
     width:100%;
     border:2px solid #00b2ca;
    
    
 
 }
-main .sub3_2 table tr td span:nth-of-type(2){
+main .sub3_2 table tr td div:nth-of-type(2){
     float:right;
     width:38%;
     text-align: left;
 
 }
-main .sub3_2 table tr td span:nth-of-type(2) p.sold{
+main .sub3_2 table tr td div:nth-of-type(2) p.sold{
     background:#f00;
     color:#fff;
     display:inline-block;
     padding:10px 20px;
     margin-bottom:3%;
 }
-main .sub3_2 table tr td span:nth-of-type(2) p.notsold{
+main .sub3_2 table tr td div:nth-of-type(2) p.notsold{
     background:#00b2ca;
     color:#fff;
     display:inline-block;
     padding:10px 20px;
     margin-bottom:3%;
 }
-main .sub3_2 table tr td span:nth-of-type(2) p:nth-of-type(2){
+main .sub3_2 table tr td div:nth-of-type(2) p:nth-of-type(2){
     font-weight:800;
     font-size:1.2em;
 }
-main .sub3_2 table tr td span:nth-of-type(2) p:nth-of-type(3){}
+main .sub3_2 table tr td div:nth-of-type(2) p:nth-of-type(3){}
 
 
 main .sub3_2> p:nth-of-type(2){
@@ -1686,18 +1678,18 @@ main .sub4_1 div figure figcaption div:nth-of-type(2) p{
     line-height:1.6;
 
 }
-main .sub4_1 div figure figcaption div:nth-of-type(2) a{
+main .sub4_1 div figure figcaption div:nth-of-type(2)>a{
     color:#00b2ca;
     display:inline-block;
     margin-top:3%;
     border:1px solid #00b2ca;
     padding:5px 20px;
 }
-main .sub4_1 div figure figcaption div:nth-of-type(2) a:before{
+main .sub4_1 div figure figcaption div:nth-of-type(2)>a:before{
     content:'>';
     margin-right:3px;
 }
-main .sub4_1 div figure figcaption div:nth-of-type(2) a:hover{
+main .sub4_1 div figure figcaption div:nth-of-type(2)>a:hover{
     background:#00b2ca;
     color:#fff;
 }
@@ -1777,8 +1769,13 @@ main > section {
     overflow: hidden; 
     
 }
+.main_rolling .slide .imgs {
+        height:70vw;
+    }    
+    
 .main_rolling .slide .imgs img{ 
-    width:100%;    
+    width:100%;
+
 }
 
 
@@ -1802,6 +1799,13 @@ main > section {
      }
     .main_rolling>div:nth-of-type(2) {
         padding:15px 0;
+    }
+    .main_rolling>div:nth-of-type(2) p:nth-of-type(1) {
+        font-size:1em;
+    }
+    .main_rolling>div:nth-of-type(2) p:nth-of-type(1):after{
+        content:'';
+        display:none;
     }
     .main_rolling>div:nth-of-type(2) p:nth-of-type(2){
         display:none;
@@ -1836,7 +1840,7 @@ main .main_res div p {
 }
     
 main .main_res div a{
-    margin-top:3vh; 
+    margin-top:1vh; 
 }
 
     
@@ -1972,11 +1976,9 @@ main .sub_header_main1{
 
 .sub1_1_main .slide{
     width:100%;
-    
+    height:55vw;    
 }
-.sub1_1_main .slide .imgs img{ 
-    width:100%;    
-}
+
     
 /*진행진행*/
 
@@ -2003,14 +2005,20 @@ main .sub1_1 ul li{
 
 .sub1_2_main .slide .text_info{
     position:absolute;
-    width:30vw; height:30vw;
-    bottom:10%; right:5%; 
+    width:35vw;
+    height:35vw;
+    top:10%;
+    right:5%; 
 }
-.sub1_2_main .slide .text_info p:nth-of-type(1){
-    font-size:1.1em;
-   
     
-}
+.sub1_2_main .slide .text_info p,.sub1_2_main .slide .text_info p:nth-of-type(1) {
+        font-size:.9em;
+    }    
+.sub1_2_main .slide .text_info a {
+    font-size:.9em;
+    margin:0;
+    padding:5px;
+    }
 
 div .sub1_2_1{}
 div .sub1_2_1 ul{
@@ -2208,4 +2216,13 @@ main .sub4_1 div>figure:nth-of-type(1n){
     width:100%;
 }
 
+main .sub4_1 div figure figcaption div:nth-of-type(1),main .sub4_1 div figure figcaption div:nth-of-type(2) {
+    width:100%;
+    display:block;
+        
+    }   
+main .sub4_1 div figure figcaption div:nth-of-type(2) p{
+    font-size:.9em;
+    }    
+    
 }

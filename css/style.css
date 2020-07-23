@@ -374,8 +374,8 @@ main .main_res ul li>h3:after{
 main .main_res div p {
     text-align: left;
 }
-
-main .main_res div p span{
+main .main_res div p span:nth-of-type(1){
+    display:inline-block;
     color:#fff;
     font-size:1.6em;
     width:70%;
@@ -1820,23 +1820,17 @@ main .main_res div {
 }
 
 main .main_res div h3 {
-    width:12vw;
-    height:12vw;
+    width:10vw;
+    height:10vw;
 
 }
-
-main .main_res ul li>h3:after{
-    content:'';
-    display:block;
-    width:8vw; height:3px;
-    background-color:#00b2ca;
-    margin:0 auto;
-}
-    
-    
+        
 main .main_res div p {
     text-align: center;
-    margin:2% 0;
+
+}
+main .main_res div p span:nth-of-type(1){
+    font-size:1.2em;
 }
     
 main .main_res div a{
@@ -1980,8 +1974,6 @@ main .sub_header_main1{
 }
 
     
-/*진행진행*/
-
 
 main .sub1_1{}
 main .sub1_1 ul{
@@ -1993,7 +1985,13 @@ main .sub1_1 ul li{
     margin-bottom:5%;
 }
 
+main .sub1_1 ul li:nth-of-type(1):before,main .sub1_1 ul li:nth-of-type(2):before,main .sub1_1 ul li:nth-of-type(3):before{
+    width:14vw;
+    height:14vw;
 
+}
+
+    
 /*서브1-2 페이지 상세*/
 
 

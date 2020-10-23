@@ -1328,7 +1328,7 @@ main .sub1_2_3 ul li figure figcaption p:nth-of-type(1){
 main .sub1_3_map .map_api{
     width:70%;
     margin:0 auto;
-    height:auto;
+    height:438px;
     overflow: hidden;
 }
 main .sub1_3_map .map_api p{

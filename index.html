@@ -5,89 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DAON</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="img/favi.ico">   
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+    <link rel="icon" href="img/favi.ico">
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/common.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">   
+     
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    
+    <link rel="icon" href="img/favi.ico">
+   
 </head>
 <body>
+   <div class="head"></div>
    
-   <header>
-      <div>
-       <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
-       <nav>
-          <ul>
-              <li>
-              <a href="#">다온소개</a>
-              <div>
-                  <a href="sub1_1.html">펜션안내</a>
-                  <a href="sub1_2.html">객실안내</a>
-                  <a href="sub1_3.html">찾아오시는 길</a>
-              </div>
-              </li>
-              <li><a href="sub2_1.html">시설안내</a></li>
-              <li><a href="sub3_1.html">예약</a></li>
-              <li><a href="sub4_1.html">주변여행지</a></li>
-          </ul>
-       </nav>
-       <a class="menu-trigger" href="#">
-           <span></span>
-           <span></span>
-           <span></span>
-       </a>       
-      </div>
-      <div class="all_menu">
-         <div class="w70">
-          <div>
-              <h1><a href="index.html"><img src="img/logo_white.png" alt="logo"></a></h1>
-          </div>
-          <div>
-              <ul>
-                  <li><a href="sub1_1.html">다온소개</a>
-                      <div>
-                          <a href="sub1_1.html">펜션안내</a>
-                          <a href="sub1_2.html">객실안내</a>
-                          <a href="sub1_3.html">찾아오시는 길</a>
-                      </div>
-                  </li>
-                  <li><a href="sub2_1.html">시설안내</a></li>
-                  <li><a href="sub3_1.html">예약</a></li>
-                  <li><a href="sub4_1.html">주변여행지</a></li>
-                  
-              </ul>
-          </div>
-          <a></a> 
-          </div>
-      </div>    
-   </header>
-
-   
-   <main>      
+    <div class="navi">
+           <ul>
+                <li class="active"><a href="#">MAIN</a></li>
+                <li><a href="#">RESERVATION</a></li>
+                <li><a href="#">OUR ROOM</a></li>
+                <li><a href="#">SPECIAL PLACE</a></li>
+                <li><a href="#">DAON</a></li>
+                <li><a href="#">TOURLIST</a></li>
+                <li><a href="#">LOCATION</a></li>
+            </ul>
+       </div>
+<main>
+      
        <!--롤링배너-->
-       <section class="main_rolling">
-           <div class="slide">
-                   <div class="imgs">                      
-                           <img src="img/main_roll1.jpg" alt="main_rolling">
-                            
-                   </div>
-                   <div class="btn">
-                       <a>prev</a>
-                       <a>next</a>
-                   </div>
-                   <div class="indi">
-                       <a></a>
-                       <a></a>
-                       <a></a>
-                       <a></a>           
-                   </div>       
-           </div>
-           
-           <div>
-               <h2>DAON</h2>
-               <p>편안한 휴식처 다온</p>
-               <p>가슴을 두근두근 설레게 하는 곳 
-               다온펜션에 오신 것을 환영합니다.</p>
-           </div>
-       </section>
+    <section class="main_rolling">
+        <div class="main_roll slider">
+            <div>
+                <img src="img/main_roll1.jpg">
+                텍스트 테스트
+            </div>
+            <div>
+                <img src="img/main_roll2.jpg">
+            </div>
+            <div>
+                <img src="img/main_roll3.jpg">
+            </div>
+
+        </div>
+        <div class="rolling_txt">
+            <h2>
+                <span>D</span>
+                <span>A</span>
+                <span>O</span>
+                <span>N</span>
+            </h2>
+            <p>편안한 휴식처 다온</p>
+            <p>가슴을 두근두근 설레게 하는 곳 
+            다온펜션에 오신 것을 환영합니다.</p>
+        </div>
+    </section>
        
        
         <!--예약-->
@@ -97,7 +72,7 @@
                   <p><span>ONLINE RESERVATION</span>
                 <span>칼봉산을 바라보며 자연과 하나되어 힐링할 수 있는 다온에 오신 것을 환영합니다!</span>
                   </p>
-                  <a href="#">예약하기</a>
+                  <a href="sub3_1.html">예약하기</a>
               </div>
        </section>
        
@@ -107,52 +82,132 @@
            <h3>OUR ROOM</h3>
            <p>전 객실 어디에서든 시원하게 펼쳐진 칼봉산의
            아름다운 풍경을 창 밖으로 담은 다온 펜션에서 휴양을 즐기세요</p>
-           
-          <div>
-            <img src="img/main_room01.jpg" alt="our room101">
-            <img src="img/main_room02.jpg" alt="our room102">
-            <img src="img/main_room03.jpg" alt="our room103">
-            <img src="img/main_room02.jpg" alt="our room102">
-            <img src="img/main_room03.jpg" alt="our room103">
-              
-              
-          </div>
+            <div class="center slider" id="slider2">
+                <div>
+                    <figure>
+                      <img src="img/main_room01.jpg">
+                      <figcaption>
+                      <h4>LOVE YOU 101호</h4>
+                        <p>숲이 보이는 원룸형</p>
+                        
+                        </figcaption>
+
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                      <img src="img/main_room02.jpg">
+                      <figcaption>
+                      <h4>LOVE YOU 101호</h4>
+                        <p>숲이 보이는 원룸형</p>
+                        
+                        </figcaption>
+
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                      <img src="img/main_room03.jpg">
+                      <figcaption>
+                      <h4>LOVE YOU 101호</h4>
+                        <p>숲이 보이는 원룸형</p>
+                        
+                        </figcaption>
+
+                    </figure>
+                </div>
+                
+                <div>
+                    <figure>
+                      <img src="img/main_room01.jpg">
+                      <figcaption>
+                      <h4>LOVE YOU 101호</h4>
+                        <p>숲이 보이는 원룸형</p>
+                        
+                        </figcaption>
+
+                    </figure>
+                </div>
+                
+                <div>
+                    <figure>
+                      <img src="img/main_room02.jpg">
+                      <figcaption>
+                      <h4>LOVE YOU 101호</h4>
+                        <p>숲이 보이는 원룸형</p>
+                        
+                        </figcaption>
+
+                    </figure>
+                </div>
+                
+                <div>
+                    <figure>
+                      <img src="img/main_room03.jpg">
+                      <figcaption>
+                      <h4>LOVE YOU 101호</h4>
+                        <p>숲이 보이는 원룸형</p>
+                        
+                        </figcaption>
+
+                    </figure>
+                </div>
+                
+                <div>
+                    <figure>
+                      <img src="img/main_room01.jpg">
+                      <figcaption>
+                      <h4>LOVE YOU 101호</h4>
+                        <p>숲이 보이는 원룸형</p>
+                        
+                        </figcaption>
+
+                    </figure>
+                </div>
+            
+            </div>
+        
        </section>
        
        <!--시설소개-->
-       <section class="w70">
+       <section class="w70 test_div">
            <h3>SPECIAL PLACE</h3>
            <p>고객님들께서 행복하고 즐거운 추억을 만들 수 있도록
            준비한 다온 펜션에서 여행의 설레임과 행복을 느껴보세요.</p>
            
            <div class="main_fac">
-               <figure>
-                  <figcaption>
-                       <h4>바베큐 시설</h4>
-                       <a href="#">예약하기</a>
-                   </figcaption>
-               </figure>
-               
-               <figure>
-                  <figcaption>
-                       <h4>옥상 정원</h4>
-                       <a href="#">자세히보기</a>
-                   </figcaption>
-               </figure>
-               
-               <figure>
-                  <figcaption>
-                       <h4>야외수영장</h4>
-                       <a href="#">예약하기</a>
-                   </figcaption>
-               </figure>
-               <figure>
-                  <figcaption>
-                       <h4>아메리카노 서비스</h4>
-                       <a href="#">자세히보기</a>
-                   </figcaption>
-               </figure>
-               
+              <div>
+                   <figure>
+                      <figcaption>
+                           <h4>바베큐 시설</h4>
+                           <a href="sub2_1.html">자세히 보기</a>
+                       </figcaption>
+                   </figure>
+               </div> 
+               <div>              
+                   <figure>
+                      <figcaption>
+                           <h4>옥상 정원</h4>
+                           <a href="sub2_1.html">자세히 보기</a>
+                       </figcaption>
+                   </figure>
+               </div>
+               <div>
+                   <figure>
+                      <figcaption>
+                           <h4>야외수영장</h4>
+                           <a href="sub2_1.html">자세히 보기</a>
+                       </figcaption>
+                   </figure>
+               </div> 
+               <div>
+                   <figure>
+                      <figcaption>
+                           <h4>아메리카노 서비스</h4>
+                           <a href="sub2_1.html">자세히 보기</a>
+                       </figcaption>
+                   </figure>
+               </div>
            </div>
        </section>
        
@@ -176,10 +231,7 @@
                           <figcaption>
                              <a href="sub4_1.html">
                               <h3>남이섬</h3>
-                              <p>남이섬은 청평댐을 만들 때 북한강 강물이 차서 생긴
-                              경기도와 강원도 경계에 있는 내륙의 섬이다.
-                              남이섬은 나무들이 만들어 준 천국이라 해도
-                              과언이 아닐 만큼 아름다운 숲길이 섬 전체를 메우고 있다.</p>
+                              <p>남이섬은 청평댐을 만들 때 북한강 강물이 차서 생긴 경기도와 강원도 경계에 있는 내륙의 섬이다. 남이섬은 나무들이 만들어 준 천국이라 해도 과언이 아닐 만큼 아름다운 숲길이 섬 전체를 메우고 있다.</p>
                               </a>
                           </figcaption>
                     </figure>  
@@ -201,13 +253,21 @@
                           <figcaption>
                              <a href="sub4_1.html">
                               <h3>칼봉산 짚라인</h3>
-                              <p>칼봉산에 총8개 코스로 2,418m를 가르는 코스로
-                              이우어져 있다.칼봉산의 울창한 산림이 내뿜는
-                              맑은 공기와 하께 짜릿함을 함께 즐길 수 있는
+                              <p>칼봉산에 총8개 코스로 2,418m를 가르는 코스로 이루어져 있다.칼봉산의 울창한 산림이 내뿜는 맑은 공기와 하께 짜릿함을 함께 즐길 수 있는
                               코스로 칼봉산휴양림 향토방쪽에 자리하고 있다.</p>
                               </a>
                           </figcaption>
-                     </figure>   
+                     </figure> 
+                     
+                     <figure>
+                          <img src="img/main_tour04.jpg" alt="tourlist_01">
+                          <figcaption>
+                             <a href="sub4_1.html">
+                              <h3>아침 고요 수목원</h3>
+                              <p>축령산 자락에 위치한 아름다운 정원, 아침 고요 원예 수목원이다. 입구의 고향집정원에서부터,수목원을 한눈에 내려다볼 수 있는 하경전망대가 있는 하경정원까지 20여개의 주제로 정원이 꾸며져 있다.</p>
+                              </a>
+                          </figcaption>
+                     </figure>      
                       
               </article>
           </div>
@@ -217,13 +277,12 @@
        <section class="map w70">
           <div class="map_api">
             <!-- * 카카오맵 - 지도퍼가기 -->
-            <!-- 1. 지도 노드 -->
+            <!-- 1. 지도 노드 
             <div id="daumRoughmapContainer1594350661505" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-
             <!--
                 2. 설치 스크립트
                 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-            -->
+            
             <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
             <!-- 3. 실행 스크립트 -->
@@ -257,64 +316,91 @@
               (경반리 583-34)</p>
           </div>
            
-       </section>   
+       </section>  
+        
    </main>
    
-   <footer>
-       <div>
-         <ul>
-             <li>                 
-                 <p>031-581-0662
-                   010-3923-0662</p>
-             </li>
-              <li>
-                  <p>가평군 가평읍 경반안로 357-187
-                   (경반리 583-34)</p>
-             </li>
-              <li>
-                  <p>기업은행 : 1234-5678-901
-                   가평 다온 펜션</p>
-             </li>
-         </ul>
-         
-          
-          
-
-       </div>
-           
-           <p>
-               가평다온펜션 온리유(민박사업자)/펜션지기 : 박춘하 / 사업자등록번호: 286-11-00158
-예약전화 : 010-3923-0662, 031-581-0662 / 주소 : 경기도 가평군 가평읍 경반안로 357-187
-다온펜션 러브유(민박사업자)/펜션지기 : 권미라 / 사업자등록번호: 167-21-0008
-예약전화 : 010-7238-5601 / 주소 : 경기도 가평군 가평읍 경반안로 357-177
-       </p>
-<p>Copyright@ 2020 다온펜션 All Rights Reserved
-           </p>
-       
-       
-   </footer>
-   
+<div class="foot"></div>   
   
-    <aside>
-       <ul>
-           <li><a href="#">TOP</a></li>
-           <li><a href="#"><img src="img/aside_kkao.png" alt="kakao talk"></a></li>
-           <li><a href="#"><img src="img/aside_insta.png" alt="instagram"></a></li>
-       </ul>
-   </aside> 
-     
-<script>
-    const menu = document.querySelector('.menu-trigger');
-    const allshow = document.querySelector('.all_menu');    
-    menu.addEventListener('click',function(){
-        document.querySelector('body').classList.toggle('active');   
-        menu.classList.toggle('active');
-        allshow.classList.toggle('active');
-    });
-    
-</script> 
-   
+<aside></aside>   
+      
+<!--slick 슬라이드  -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+  
+<!--1. 최상단 메인 롤링 -->
 
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".main_roll").slick({
+        dots: true,
+        infinite: true,
+        vertical: true,
+        autoplay:true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+        
+    $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        autoplay:true,
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        arrows: true
+      });    
+
+    });
+</script>
+
+<script>
+
+/* 스크롤 이벤트 */
+window.addEventListener('load',function(){
+    var menuHeight = document.querySelector("header").offsetHeight;
+    var navEl = document.querySelectorAll('.navi a');
+    var secEl = document.querySelectorAll('section');   
+    
+    var secArr = [];    
+        secEl.forEach (function (val,i) {        
+            secArr.push(val.offsetTop);
+        })    
+    console.log(secArr)
+    
+    navEl.forEach (function (val,idx){
+//        console.log(secArr[idx]);
+        val.addEventListener('click',function(e){
+            
+            e.preventDefault();            
+            navEl.forEach(function(a){
+                a.classList.remove('active');    
+            })
+                val.classList.add('active');              
+//            window.scrollTo(0,secArr[idx]);
+            window.scrollTo(0,secArr[idx]-menuHeight); //헤더값만큼의 크기를 각 섹션시작점에서 빼줌
+        });
+    });
+
+    var winH = window.innerHeight/2;
+    
+    window.addEventListener('scroll',function(){
+        secArr.forEach(function(el,idx){
+            if(window.scrollY > secArr[idx]-winH){
+                
+                navEl.forEach(function(a){
+                a.classList.remove('active');    
+                })
+            navEl[idx].classList.add('active'); 
+            }
+                    
+            
+        });
+    });
+}); 
+</script> 
     
             
 </body>

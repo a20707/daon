@@ -5,85 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DAON</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="img/favi.ico">   
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/common.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+    <link rel="icon" href="img/favi.ico">
 </head>
 <body>
-   
-   <header>
-      <div>
-       <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
-       <nav>
-          <ul>
-              <li>
-              <a href="#">다온소개</a>
-              <div>
-                  <a href="sub1_1.html">펜션안내</a>
-                  <a href="sub1_2.html">객실안내</a>
-                  <a href="sub1_3.html">찾아오시는 길</a>
-              </div>
-              </li>
-              <li><a href="sub2_1.html">시설안내</a></li>
-              <li><a href="sub3_1.html">예약</a></li>
-              <li><a href="sub4_1.html">주변여행지</a></li>
-          </ul>
-       </nav>
-       <a class="menu-trigger" href="#">
-           <span></span>
-           <span></span>
-           <span></span>
-       </a>       
-      </div>
-      <div class="all_menu">
-         <div class="w70">
-          <div>
-              <h1><a href="index.html"><img src="img/logo_white.png" alt="logo"></a></h1>
-          </div>
-          <div>
-              <ul>
-                  <li><a href="sub1_1.html">다온소개</a>
-                      <div>
-                          <a href="sub1_1.html">펜션안내</a>
-                          <a href="sub1_2.html">객실안내</a>
-                          <a href="sub1_3.html">찾아오시는 길</a>
-                      </div>
-                  </li>
-                  <li><a href="sub2_1.html">시설안내</a></li>
-                  <li><a href="sub3_1.html">예약</a></li>
-                  <li><a href="sub4_1.html">주변여행지</a></li>
-                  
-              </ul>
-          </div>
-          <a></a> 
-          </div>
-      </div>    
-   </header>
+
+   <div class="head"></div>
 
    <main>
     <section class="sub_header_main1">
              <h2>다온 펜션 안내</h2>
 
     </section>
-    <section class="sub1_1_main">
-           <div class="slide">
-                   <div class="imgs">                      
-                           <img src="img/sub1_1_main01.jpg" alt="">
-                           <img src="../img/basic02.jpg" alt="">
-                           <img src="../img/basic03.jpg" alt="">
-                           <img src="../img/basic04.jpg" alt="">  
-                   </div>
-                   <div class="btn">
-                       <a>prev</a>
-                       <a>next</a>
-                   </div>
-                   <div class="indi">
-                       <a></a>
-                       <a></a>
-                       <a></a>
-                       <a></a>           
-                   </div>       
-           </div>
-    </section>
+    
+    <section class="sub1_1_rolling">    
+    <div class="slideshow">
+        <div class="slideshow-slides">
+            <a href="#" class="slide"><img src="img/main_roll1.jpg" alt=""></a>
+            <a href="#" class="slide"><img src="img/main_roll2.jpg" alt=""></a>
+            <a href="#" class="slide"><img src="img/main_roll3.jpg" alt=""></a>
+
+        </div>
+
+        <div class="btn">
+            <a href="#" class="prev"></a>
+            <a href="#" class="next"></a>
+        </div>
+
+        <div class="indi"></div>
+    </div>
+
+</section>
     
       <section class="sub1_1 w70">
           <ul>
@@ -120,59 +77,130 @@
        
    </main>
    
-<footer>
-       <div>
-         <ul>
-             <li>                 
-                 <p>031-581-0662
-                   010-3923-0662</p>
-             </li>
-              <li>
-                  <p>가평군 가평읍 경반안로 357-187
-                   (경반리 583-34)</p>
-             </li>
-              <li>
-                  <p>기업은행 : 1234-5678-901
-                   가평 다온 펜션</p>
-             </li>
-         </ul>
-         
-          
-          
-
-       </div>
-           
-           <p>
-               가평다온펜션 온리유(민박사업자)/펜션지기 : 박춘하 / 사업자등록번호: 286-11-00158
-예약전화 : 010-3923-0662, 031-581-0662 / 주소 : 경기도 가평군 가평읍 경반안로 357-187
-다온펜션 러브유(민박사업자)/펜션지기 : 권미라 / 사업자등록번호: 167-21-0008
-예약전화 : 010-7238-5601 / 주소 : 경기도 가평군 가평읍 경반안로 357-177
-       </p>
-<p>Copyright@ 2020 다온펜션 All Rights Reserved
-           </p>
-       
-       
-   </footer>
-   
+<div class="foot"></div>   
   
     <aside>
-       <ul>
-           <li><a href="#">TOP</a></li>
-           <li><a href="#"><img src="img/aside_kkao.png" alt="kakao talk"></a></li>
-           <li><a href="#"><img src="img/aside_insta.png" alt="instagram"></a></li>
-       </ul>
+     
    </aside>    
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
 <script>
-    const menu = document.querySelector('.menu-trigger');
-    const allshow = document.querySelector('.all_menu');    
-    menu.addEventListener('click',function(){
-        document.querySelector('body').classList.toggle('active');   
-        menu.classList.toggle('active');
-        allshow.classList.toggle('active');
-    });
     
-</script>    
+$(function () {
+
+    /*
+     * Slideshow
+     */
+    $('.slideshow').each(function () {
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+        var $slideGroup = $(this).find('.slideshow-slides'),   // b
+            $slides = $slideGroup.find('.slide'),                 // c
+            $cloneFirst = $slides.eq(0).clone(),
+            $cloneLast = $slides.eq(2).clone(),
+            $btn = $(this).find('.btn'),             // d
+            $indicator = $(this).find('.indi'), // e
+            
+            slideCount = $slides.length, // 슬라이드 갯수
+            indicatorHTML = '',          // 인디게이터 콘텐트
+            currentIndex = 1,            // 현재 슬라이드의 인덱스
+            duration = 500,              // 다음 슬라이드에 애니메이션의 소요 시간
+            easing = 'easeInOutExpo',    // 다음 슬라이드에 애니메이션의 이징 종류
+            interval = 2000,             // 자동으로 다음 슬라이드로 옮길 때까지의 시간
+            timer;                       // 타이머
+        
+        
+        $slideGroup.append($cloneFirst); //슬라이드 마지막에 처음 클론 추가
+        $slideGroup.prepend($cloneLast); //슬라이드 맨 처음에 마지막 클론 추가
+        $slides = $('.slide'); //슬라이드를 다시 잡아주는 이유는 위에서 클론을 시켰기 때문에
+       
+        $slides.each(function (i) {
+            $(this).css({ left: 100 * i + '%' });
+            if(i<slideCount) indicatorHTML += "<a href='#'></a>";
+            //클론을 했어도 인디게이터의 갯수는 늘어나면 안되기 때문에 i를 원래의 슬라이드 카운터로 잡아준다  
+        });
+
+        //인디게이터 삽입 
+        $indicator.html(indicatorHTML);
+        $slideGroup.css('left','-100%');
+        //↑슬라이드 그룹의 위치값을 잡음
+
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+       //슬라이드
+        function goToSlide (index) {
+            // 슬라이드 그룹을 대상 위치에 맞게 이동
+            currentIndex = index;
+            $slideGroup.animate({ left: - 100 * index + '%' }, duration, easing,updateBtn); 
+        }
+
+        
+        function updateBtn () {
+            //↓현재 슬라이드의 위치가 총 슬라이드+1(클론해준값)일때 듀레이션을 0으로 해서 돌아가는게 눈에 안 보이게 착시를 줌 
+            if(currentIndex == slideCount+1) {
+                duration = 0;
+                goToSlide (1) // 처음 슬라이드로 돌아가게
+            }else if(currentIndex == 0){
+                duration = 0;
+                goToSlide (slideCount) //마지막 슬라이드
+            }else{
+                duration = 500;
+            }
+            
+            // 현재 슬라이드상의 인디게이터 표시. 리무브로 다 없애고(이렇게 하지 않으면 움직일때마다 전체 다 액티브 먹고 있다) 그 다음에 현재 슬라이드-1(클론값때문에 인덱스를 1로 잡았던 것을 고려하여)해서 액티브 클래스를 추가해준다
+            $indicator.find('a').removeClass('active').eq(currentIndex-1).addClass('active');
+        }
+
+        //이미지가 자동으로 움직이도록 함 수제어 
+        function startTimer () {
+            timer = setInterval(function(){
+                $btn.find('a').eq(1).trigger('click');
+            },3000);
+        }
+        
+        function stopTimer(){
+            clearInterval(timer);
+        }
+        
+        //좌우 버튼 클릭시 제어
+        $btn.find('a').on('click',function(e){
+            e.preventDefault();
+           if($(this).index()==0){               
+               goToSlide(currentIndex-1);
+           }else{
+               goToSlide(currentIndex+1)
+           }
+        });
+        
+        //인디게이터 버튼 연동
+        $indicator.on('click','a',function(e){
+        //여기에서 'a를 다시 선택하는 이유는 인디케이터를 눌렀을때 그 안에 있는 a를 잡기 위하여. 인디케이터가 html내에서는 생성이 되어있지 않고 슬라이드의 갯수만큼 생성하라고 명령을 해두었기 때문에 이렇게 만들어두면 인디케이터 안에서 생성된 a를 다시 잡게 해줌
+           e.preventDefault();
+            if(!$(this).hasClass('active')){
+                goToSlide($(this).index()+1); //클론때문에 하나씩 끌어줬기 때문에 클릭시 액티브되도록 인덱스에도 +ㅂ해준다
+            }
+        });
+        
+        //이미지위에 커서 있을시 멈추도록
+        $(this).on({
+            mouseenter:stopTimer,
+            mouseleave:startTimer
+        })
+
+        // 첫 번째 슬라이드를 표시
+        goToSlide(currentIndex);
+
+        // 타이머를 시작
+        startTimer();
+
+    });
+
+});    
+    
+</script>       
          
     
 </body>

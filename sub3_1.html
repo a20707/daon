@@ -5,59 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DAON</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="img/favi.ico">  
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/common.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+    <link rel="icon" href="img/favi.ico">
 </head>
 <body>
    
-   <header>
-      <div>
-       <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
-       <nav>
-          <ul>
-              <li>
-              <a href="sub1_1.html">다온소개</a>
-              <div>
-                  <a href="sub1_1.html">펜션안내</a>
-                  <a href="sub1_2.html">객실안내</a>
-                  <a href="sub1_3.html">찾아오시는 길</a>
-              </div>
-              </li>
-              <li><a href="sub2_1.html">시설안내</a></li>
-              <li><a href="sub3_1.html">예약</a></li>
-              <li><a href="sub4_1.html">주변여행지</a></li>
-          </ul>
-       </nav>
-       <a class="menu-trigger" href="#">
-           <span></span>
-           <span></span>
-           <span></span>
-       </a>       
-      </div>
-      <div class="all_menu">
-         <div class="w70">
-          <div>
-              <h1><a href="index.html"><img src="img/logo_white.png" alt="logo"></a></h1>
-          </div>
-          <div>
-              <ul>
-                  <li><a href="sub1_1.html">다온소개</a>
-                      <div>
-                          <a href="sub1_1.html">펜션안내</a>
-                          <a href="sub1_2.html">객실안내</a>
-                          <a href="sub1_3.html">찾아오시는 길</a>
-                      </div>
-                  </li>
-                  <li><a href="sub2_1.html">시설안내</a></li>
-                  <li><a href="sub3_1.html">예약</a></li>
-                  <li><a href="sub4_1.html">주변여행지</a></li>
-                  
-              </ul>
-          </div>
-          <a></a> 
-          </div>
-      </div>    
-   </header>
+  <div class="head"></div>
 
    <main>
        <section class="sub_header_main3">
@@ -99,14 +57,14 @@
                        <td>12</td>
                        <td>13</td>
                        <td>14</td>
-                       <td class="active">15</td>
+                       <td>15</td>
                        <td>16</td>
                        <td>17</td>
                        <td>18</td>
                    </tr>
                    <tr>
                        <td>19</td>
-                       <td>20</td>
+                       <td class="active">20</td>
                        <td>21</td>
                        <td>22</td>
                        <td>23</td>
@@ -170,8 +128,8 @@
        </section>
        
        <section class="sub3_2 w70 clear ma3">
-          <h4>기준 날짜 : <span class="fontmaincolor"> 2020년 7월</span></h4>
-          <p>달력에서 이용시작일을 선택하여 예약 가능한 객실을 선택 후 예약하기 버튼을 클릭하세요</p>
+          <h4>기준 날짜 : <span class="fontmaincolor"> 2020년 10월</span></h4>
+          <p></p>
            <table>
                <tr>
                    <th></th>
@@ -183,222 +141,342 @@
                </tr>
                <tr>
                    <td>
-                       <input type="checkbox" name="select" value="select">
+                       <input type="checkbox" name="checkbox">
                    </td>
                    <td>
                        <div>
                            <img src="img/sub3_1_room.jpg" alt="room">
                        </div>
                        <div>
-                           <p class="notsold">예약가능</p>
-                           <p>Love you  102호</p>
+                           <p class="notsold"></p>
+                           <p>Love you 101호</p>
                            <p>16평형 [ 2명 / 6명]</p>
                        </div>
                    </td>
                    <td>
                        이용기간
-                       <select name="select_days">
-			<option value="1days">1박</option>
-			<option value="2days">2박</option>
-			<option value="3days">3박</option>
-		</select>
+                       <select class="s_days">
+                        <option value="1">1박</option>
+                        <option value="2">2박</option>
+                        <option value="3">3박</option>
+                		</select>
                    </td>
                    <td>
                        성인
-                       <select name="select_man" required>
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                       <select class="s_mans">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
                         아동
-                       <select name="select_child">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                       <select class="s_child">
+                            <option value="0">0</option>
+                            <option value="0.5">1</option>
+                            <option value="1">2</option>
+                            <option value="1.5">3</option>
                         </select>
                         유아
-                       <select name="select_baby">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                       <select class="s_baby">
+                            <option value="0">0</option>
+                            <option value="0.5">1</option>
+                            <option value="0.5">2</option>
+                            <option value="0.5">3</option>
                         </select>
-                   </td>
-                   <td>
-                       할인기간: 
-                       120,000원
+                   </td>  
+                   <td class="cost" data-val="100000">
+                       비수기/주중: 
+                       100,000원
                    </td>        
-                   <td>
-                       0원
-                   </td>          
-               </tr>
-               <tr>
-                   <td>
-                       <input type="checkbox" name="select" value="select">
-                   </td>
-                   <td>
-                       <div>
-                           <img src="img/sub3_1_room.jpg" alt="room">
-                       </div>
-                       <div>
-                           <p class="sold">예약완료</p>
-                           <p>Love you  103호</p>
-                           <p>16평형 [ 2명 / 6명]</p>
-                       </div>
-                   </td>
-                   <td>
-                       이용기간
-                       <select name="select_days">
-			<option value="1days">1박</option>
-			<option value="2days">2박</option>
-			<option value="3days">3박</option>
-		</select>
-                   </td>
-                   <td>
-                       성인
-                       <select name="select_man" required>
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                        아동
-                       <select name="select_child">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                        유아
-                       <select name="select_baby">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                   </td>    
-                   <td>
-                       할인기간: 
-                       120,000원
-                   </td>        
-                   <td>
-                       0원
-                   </td>          
+                   <td class="tot">
+                       액수:
+                   </td>  
                </tr>
                
                <tr>
                    <td>
-                       <input type="checkbox" name="select" value="select">
+                       <input type="checkbox" name="checkbox">
                    </td>
                    <td>
                        <div>
-                           <img src="img/sub3_1_room.jpg" alt="room">
+                           <img src="img/sub3_2_room.jpg" alt="room">
                        </div>
                        <div>
-                           <p class="sold">예약완료</p>
-                           <p>Love you  201호</p>
+                           <p class="sold"></p>
+                           <p>Love you 102호</p>
                            <p>16평형 [ 2명 / 6명]</p>
                        </div>
                    </td>
                    <td>
                        이용기간
-                       <select name="select_days">
-			<option value="1days">1박</option>
-			<option value="2days">2박</option>
-			<option value="3days">3박</option>
-		</select>
+                       <select class="s_days">
+                        <option value="1">1박</option>
+                        <option value="2">2박</option>
+                        <option value="3">3박</option>
+                		</select>
                    </td>
                    <td>
                        성인
-                       <select name="select_man" required>
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                       <select class="s_mans">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
                         아동
-                       <select name="select_child">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                       <select class="s_child">
+                            <option value="0">0</option>
+                            <option value="0.5">1</option>
+                            <option value="1">2</option>
+                            <option value="1.5">3</option>
                         </select>
                         유아
-                       <select name="select_baby">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                       <select class="s_baby">
+                            <option value="0">0</option>
+                            <option value="0.5">1</option>
+                            <option value="0.5">2</option>
+                            <option value="0.5">3</option>
                         </select>
                    </td>  
-                   <td>
-                       할인기간: 
-                       120,000원
+                   <td class="cost" data-val="100000">
+                       비수기/주중: 
+                       100,000원
                    </td>        
-                   <td>
-                       0원
-                   </td>          
+                   <td class="tot">
+                       액수:
+                   </td>  
+                     
                </tr>
                
                <tr>
                    <td>
-                       <input type="checkbox" name="select" value="select">
+                       <input type="checkbox" name="checkbox">
+                   </td>
+                   <td>
+                       <div>
+                           <img src="img/sub3_3_room.jpg" alt="room">
+                       </div>
+                       <div>
+                           <p class="notsold"></p>
+                           <p>Love you 103호</p>
+                           <p>16평형 [ 2명 / 6명]</p>
+                       </div>
+                   </td>
+                   <td>
+                       이용기간
+                       <select class="s_days">
+                        <option value="1">1박</option>
+                        <option value="2">2박</option>
+                        <option value="3">3박</option>
+                		</select>
+                   </td>
+                   <td>
+                       성인
+                       <select class="s_mans">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        아동
+                       <select class="s_child">
+                            <option value="0">0</option>
+                            <option value="0.5">1</option>
+                            <option value="1">2</option>
+                            <option value="1.5">3</option>
+                        </select>
+                        유아
+                       <select class="s_baby">
+                            <option value="0">0</option>
+                            <option value="0.5">1</option>
+                            <option value="0.5">2</option>
+                            <option value="0.5">3</option>
+                        </select>
+                   </td>  
+                   <td class="cost" data-val="100000">
+                       비수기/주중: 
+                       100,000원
+                   </td>        
+                   <td class="tot">
+                       액수:
+                   </td>  
+                     
+               </tr>
+               
+               <tr>
+                   <td>
+                       <input type="checkbox" name="checkbox">
+                   </td>
+                   <td>
+                       <div>
+                           <img src="img/sub3_4_room.jpg" alt="room">
+                       </div>
+                       <div>
+                           <p class="notsold"></p>
+                           <p>Love you 104호</p>
+                           <p>16평형 [ 2명 / 6명]</p>
+                       </div>
+                   </td>
+                   <td>
+                       이용기간
+                       <select class="s_days">
+                        <option value="1">1박</option>
+                        <option value="2">2박</option>
+                        <option value="3">3박</option>
+                		</select>
+                   </td>
+                   <td>
+                       성인
+                       <select class="s_mans">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        아동
+                       <select class="s_child">
+                            <option value="0">0</option>
+                            <option value="0.5">1</option>
+                            <option value="1">2</option>
+                            <option value="1.5">3</option>
+                        </select>
+                        유아
+                       <select class="s_baby">
+                            <option value="0">0</option>
+                            <option value="0.5">1</option>
+                            <option value="0.5">2</option>
+                            <option value="0.5">3</option>
+                        </select>
+                   </td>  
+                   <td class="cost" data-val="100000">
+                       비수기/주중: 
+                       100,000원
+                   </td>        
+                   <td class="tot">
+                       액수:
+                   </td>  
+                     
+               </tr>
+               
+               <tr>
+                   <td>
+                       <input type="checkbox" name="checkbox">
+                   </td>
+                   <td>
+                       <div>
+                           <img src="img/sub3_5_room.jpg" alt="room">
+                       </div>
+                       <div>
+                           <p class="sold"></p>
+                           <p>Love you 105호</p>
+                           <p>16평형 [ 2명 / 6명]</p>
+                       </div>
+                   </td>
+                   <td>
+                       이용기간
+                       <select class="s_days">
+                        <option value="1">1박</option>
+                        <option value="2">2박</option>
+                        <option value="3">3박</option>
+                		</select>
+                   </td>
+                   <td>
+                       성인
+                       <select class="s_mans">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        아동
+                       <select class="s_child">
+                            <option value="0">0</option>
+                            <option value="0.5">1</option>
+                            <option value="1">2</option>
+                            <option value="1.5">3</option>
+                        </select>
+                        유아
+                       <select class="s_baby">
+                            <option value="0">0</option>
+                            <option value="0.5">1</option>
+                            <option value="0.5">2</option>
+                            <option value="0.5">3</option>
+                        </select>
+                   </td>  
+                   <td class="cost" data-val="100000">
+                       비수기/주중: 
+                       100,000원
+                   </td>        
+                   <td class="tot">
+                       액수:
+                   </td>  
+                     
+               </tr>
+               
+               <tr>
+                   <td>
+                       <input type="checkbox" name="checkbox">
                    </td>
                    <td>
                        <div>
                            <img src="img/sub3_1_room.jpg" alt="room">
                        </div>
                        <div>
-                           <p class="sold">예약완료</p>
-                           <p>Love you  202호</p>
+                           <p class="notsold"></p>
+                           <p>Love you 106호</p>
                            <p>16평형 [ 2명 / 6명]</p>
                        </div>
                    </td>
                    <td>
                        이용기간
-                       <select name="select_days">
-			<option value="1days">1박</option>
-			<option value="2days">2박</option>
-			<option value="CSS">3박</option>
-		</select>
+                       <select class="s_days">
+                        <option value="1">1박</option>
+                        <option value="2">2박</option>
+                        <option value="3">3박</option>
+                		</select>
                    </td>
                    <td>
                        성인
-                       <select name="select_man" required>
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                       <select class="s_mans">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
                         아동
-                       <select name="select_child">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                       <select class="s_child">
+                            <option value="0">0</option>
+                            <option value="0.5">1</option>
+                            <option value="1">2</option>
+                            <option value="1.5">3</option>
                         </select>
                         유아
-                       <select name="select_baby">
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                       <select class="s_baby">
+                            <option value="0">0</option>
+                            <option value="0.5">1</option>
+                            <option value="0.5">2</option>
+                            <option value="0.5">3</option>
                         </select>
                    </td>  
-                   <td>
-                       할인기간: 
-                       120,000원
+                   <td class="cost" data-val="100000">
+                       비수기/주중: 
+                       100,000원
                    </td>        
-                   <td>
-                       0원
-                   </td>          
+                   <td class="tot">
+                       액수:
+                   </td>  
+                     
                </tr>
+               
+               
+               
+ 
+               
+
                
                
            </table>
-       <p>총 결제 금액 :<code>240,000원</code></p>
+       <p class="total">총 결제 금액 :<code></code></p>
            <a href="#">예약하기</a>
        </section>
        
@@ -406,59 +484,108 @@
        
    </main>
    
-<footer>
-       <div>
-         <ul>
-             <li>                 
-                 <p>031-581-0662
-                   010-3923-0662</p>
-             </li>
-              <li>
-                  <p>가평군 가평읍 경반안로 357-187
-                   (경반리 583-34)</p>
-             </li>
-              <li>
-                  <p>기업은행 : 1234-5678-901
-                   가평 다온 펜션</p>
-             </li>
-         </ul>
-         
-          
-          
-
-       </div>
-           
-           <p>
-               가평다온펜션 온리유(민박사업자)/펜션지기 : 박춘하 / 사업자등록번호: 286-11-00158
-예약전화 : 010-3923-0662, 031-581-0662 / 주소 : 경기도 가평군 가평읍 경반안로 357-187
-다온펜션 러브유(민박사업자)/펜션지기 : 권미라 / 사업자등록번호: 167-21-0008
-예약전화 : 010-7238-5601 / 주소 : 경기도 가평군 가평읍 경반안로 357-177
-       </p>
-<p>Copyright@ 2020 다온펜션 All Rights Reserved
-           </p>
-       
-       
-   </footer>
-   
+<div class="foot"></div>   
   
-    <aside>
-       <ul>
-           <li><a href="#">TOP</a></li>
-           <li><a href="#"><img src="img/aside_kkao.png" alt="kakao talk"></a></li>
-           <li><a href="#"><img src="img/aside_insta.png" alt="instagram"></a></li>
-       </ul>
-   </aside>   
- 
-<script>
-    const menu = document.querySelector('.menu-trigger');
-    const allshow = document.querySelector('.all_menu');    
-    menu.addEventListener('click',function(){
-        document.querySelector('body').classList.toggle('active');   
-        menu.classList.toggle('active');
-        allshow.classList.toggle('active');
+<aside></aside>     
+
+   
+ <script>
+    $('documenet').ready(function(){
+        var cost = $('.cost').data('val');
+        var s_days,s_mans,s_child,s_baby;
+        var tot,total=0,allTotal;
+        var check;
+        
+        
+        $('table').find('select').prop('disabled',true);
+        
+       
+        function parent(){
+        check = [],allTotal=0;
+            $('input[name=checkbox]').each(function() {
+               if ( $(this).prop('checked')){
+                   check.push($(this).parents('tr').index() );
+            }
+            });
+            
+        }
+        
+        
+        function price(){            
+            parent();
+            $(this).parents('tr').find('select').prop('disabled',false);      
+            
+           
+           $.each(check,function(i,v){
+               var tr = $('.sub3_2 table tbody tr').eq(check[i]);
+               tr.find('.tot').css({color:'#00b2ca'});
+           
+            total = 0;      
+            
+            s_days = Number( tr.find('.s_days').val() );
+            s_mans = Number(tr.find('.s_mans').val());
+            s_child = Number(tr.find('.s_child').val());
+            s_baby = Number(tr.find('.s_baby').val());
+            
+            total = ( (cost*s_days) * (s_mans+s_child+s_baby) );
+            
+            tr.find('.tot').html(total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
+            
+            allTotal += total;
+               
+           });
+            
+            $('.total code').html(" "+allTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+'원');
+            $('.total code').css({'color':'#f00',"font-weight": "bold"});
+            
+            
+            clear( $(this).parents('tr') );
+        }
+        
+        function clear($this){            
+            
+            if(!$this.find('input[name=checkbox]').prop('checked')){               
+                
+                $this.find('.s_days').val(1);
+                $this.find('.s_mans').val(0);
+                $this.find('.s_child').val(0);
+                $this.find('.s_baby').val(0);
+                $this.find('.tot').html('액수');
+                $this.find('.tot').css({color:'#000'})
+                $this.find('select').prop('disabled',true);
+                
+            }
+        }
+
+           $('select').change(function(){               
+                if($(this).parents('tr').find('input[name=checkbox]').prop('checked')){                
+                price();
+            }
+           }); 
+
+        
+        if( $('.notsold').parents('tr') ){
+
+            $('.notsold').html('예약가능');
+            $('.notsold').parents('tr').find('img').css({border:'2px solid #00b2ca'});
+            $('.notsold').parents('tr').find('input[name=checkbox]').on('click',price);
+        }
+        if( $('.sold') ){
+             $('.sold').html('예약완료');
+            $('.sold').parents('tr').find('img').css({border:'2px solid #f00'});
+            $('.sold').parents('tr').find('input[name=checkbox]').prop('disabled',true);
+        }  
+        
+        
+            
+            
+            
     });
-    
-</script>      
+        
+        
+        
+    </script>
+   
     
 </body>
 </html>

@@ -5,104 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DAON</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="img/favi.ico">   
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/common.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+    <link rel="icon" href="img/favi.ico">
+    
+    
+    
 </head>
 <body>
    
-   <header>
-      <div>
-       <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
-       <nav>
-          <ul>
-              <li>
-              <a href="sub1_1.html">다온소개</a>
-              <div>
-                  <a href="sub1_1.html">펜션안내</a>
-                  <a href="sub1_2.html">객실안내</a>
-                  <a href="sub1_3.html">찾아오시는 길</a>
-              </div>
-              </li>
-              <li><a href="sub2_1.html">시설안내</a></li>
-              <li><a href="sub3_1.html">예약</a></li>
-              <li><a href="sub4_1.html">주변여행지</a></li>
-          </ul>
-       </nav>
-       <a class="menu-trigger" href="#">
-           <span></span>
-           <span></span>
-           <span></span>
-       </a>       
-      </div>
-      <div class="all_menu">
-         <div class="w70">
-          <div>
-              <h1><a href="index.html"><img src="img/logo_white.png" alt="logo"></a></h1>
-          </div>
-          <div>
-              <ul>
-                  <li><a href="sub1_1.html">다온소개</a>
-                      <div>
-                          <a href="sub1_1.html">펜션안내</a>
-                          <a href="sub1_2.html">객실안내</a>
-                          <a href="sub1_3.html">찾아오시는 길</a>
-                      </div>
-                  </li>
-                  <li><a href="sub2_1.html">시설안내</a></li>
-                  <li><a href="sub3_1.html">예약</a></li>
-                  <li><a href="sub4_1.html">주변여행지</a></li>
-                  
-              </ul>
-          </div>
-          <a></a> 
-          </div>
-      </div>    
-   </header>
+   <div class="head"></div>
 
-   <main>
-       <section class="sub_header_main2">
+   <main>   
+  <section class="sub_header_main2">
              <h2>다온 시설 안내 </h2>
        </section>
-       <section class="w70">
-           <article class="sub2_tab">
-               <div class="tab_head_title">
-                   <a class="active" href="#t_con1">바베큐</a>
-                   <a href="#t_con2">옥상정원</a>
-                   <a href="#t_con3">야외수영장</a>
-                   <a href="#t_con4">아메리카노 서비스</a>
-               </div>
-               <div class="tab_content">
-                   <div id="t_con1">
-                       <p>공용 시설 하나로 모두가 사용하는 것이 아닌, 개별 현관앞 개별 바베큐 시설 제공으로
-                       언제든 편하게 사용가능합니다.
-                       방문 전 미리 연락주시면 세팅해드립니다. 
-                       ※ 숯은 제공되지 않습니다
-                       </p>
-                       <div>
-                           <img src="img/sub2_tap01.jpg" alt="">
-                           <img src="img/sub2_tap02.jpg" alt="">
-                       </div>
-                       <div>
-                           <img src="img/sub2_tap02.jpg" alt="">
-                           <img src="img/sub2_tap01.jpg" alt="">
-                       </div>
-                   </div>
-                   <div id="t_con2">
-                       <p>
-                       펜션에서 가장 전망이 좋은 곳에 sky 정원이 있습니다. 
-                       숲속 풍경을 한 눈에 내려다보며 여유와 휴식을 즐겨보세요.
-                       </p>
-                       <div>
-                           <img src="img/sub2_tap03.jpg" alt="">
-                           <img src="img/sub2_tap04.jpg" alt="">
-                       </div>
-                       <div>
-                           <img src="img/sub2_tap04.jpg" alt="">
-                           <img src="img/sub2_tap03.jpg" alt="">
-                       </div>
-                   </div>
-                   <div id="t_con3">
-                       <p>
+  <section class="w70">
+   <article class="sub2_tab">
+        <h2> </h2>
+        <div class="tab_head">
+            <a href="tab01" class="active">바베큐</a>
+            <a href="tab02">옥상정원</a>
+            <a href="tab03">야외수영장</a>
+             <a href="tab04">아메리카노 서비스</a>
+        </div>
+        <div class="tab_content">
+            <div id="tab01" class="active">
+                <p>공용 시설 하나로 모두가 사용하는 것이 아닌, 개별 현관앞 개별 바베큐 시설 제공으로 언제든 편하게 사용가능합니다.
+                방문 전 미리 연락주시면 세팅해드립니다. 
+                ※ 숯은 제공되지 않습니다
+                </p>
+                <div>
+                    <img src="img/sub2_tap01.jpg" alt="">
+                    <img src="img/sub2_tap02.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/sub2_tap02.jpg" alt="">
+                     <img src="img/sub2_tap01.jpg" alt="">
+                </div>
+            
+            
+            </div>
+            <div id="tab02">
+                <p>
+                    펜션에서 가장 전망이 좋은 곳에 sky 정원이 있습니다. 
+                     숲속 풍경을 한 눈에 내려다보며 여유와 휴식을 즐겨보세요.
+               </p>
+                <div>
+                <img src="img/sub2_tap03.jpg" alt="">
+                <img src="img/sub2_tap04.jpg" alt="">
+                </div>
+               <div>
+                <img src="img/sub2_tap04.jpg" alt="">
+                <img src="img/sub2_tap03.jpg" alt="">
+                </div> 
+            </div>
+            <div id="tab03">
+                <p>
                        객실 앞 시원한 수영장이 있습니다.
                        수영장 이용시 수영복, 래쉬가드를 꼭 착용해주시기 바랍니다.
                        (면티, 반바지 절대 금지)
@@ -115,9 +78,11 @@
                            <img src="img/sub2_tap06.jpg" alt="">
                            <img src="img/sub2_tap05.jpg" alt="">
                        </div>
-                   </div>
-                   <div id="t_con4">
-                       <p>
+                
+                
+            </div>
+            <div id="tab04">
+                <p>
                        모든 입실 손님께 아메리카노가 무료 제공됩니다.
                        향긋한 커피로 휴일의 여유를 시작해보세요
                        </p>
@@ -129,102 +94,57 @@
                            <img src="img/sub2_tap11.jpg" alt="">
                            <img src="img/sub2_tap12.jpg" alt="">
                        </div>
-                   </div>
-               </div>
-           </article>
-       </section>
- 
-       
-   </main>
+            </div>
+        </div>
+    </article>
+</section>
+</main>
    
-   <footer>
-       <div>
-         <ul>
-             <li>                 
-                 <p>031-581-0662
-                   010-3923-0662</p>
-             </li>
-              <li>
-                  <p>가평군 가평읍 경반안로 357-187
-                   (경반리 583-34)</p>
-             </li>
-              <li>
-                  <p>기업은행 : 1234-5678-901
-                   가평 다온 펜션</p>
-             </li>
-         </ul>
-         
-          
-          
-
-       </div>
-           
-           <p>
-               가평다온펜션 온리유(민박사업자)/펜션지기 : 박춘하 / 사업자등록번호: 286-11-00158
-예약전화 : 010-3923-0662, 031-581-0662 / 주소 : 경기도 가평군 가평읍 경반안로 357-187
-다온펜션 러브유(민박사업자)/펜션지기 : 권미라 / 사업자등록번호: 167-21-0008
-예약전화 : 010-7238-5601 / 주소 : 경기도 가평군 가평읍 경반안로 357-177
-       </p>
-<p>Copyright@ 2020 다온펜션 All Rights Reserved
-           </p>
-       
-       
-   </footer>
-   
+  <div class="foot"></div>  
   
     <aside>
-       <ul>
-           <li><a href="#">TOP</a></li>
-           <li><a href="#"><img src="img/aside_kkao.png" alt="kakao talk"></a></li>
-           <li><a href="#"><img src="img/aside_insta.png" alt="instagram"></a></li>
-       </ul>
+     
    </aside>    
 
 
-<script>
-    const menu = document.querySelector('.menu-trigger');
-    const allshow = document.querySelector('.all_menu');    
-    menu.addEventListener('click',function(){
-        document.querySelector('body').classList.toggle('active');   
-        menu.classList.toggle('active');
-        allshow.classList.toggle('active');
-    });
-    
-</script> 
 
 <script>
-function createTabs(selector) { 
-  const el = document.querySelector(selector);  
-  const liEls = el.querySelectorAll('.tab_head_title'); 
-  const tabContentEl = el.querySelector('.tab_content'); 
-  const firstTabEl = liEls.item(0).firstElementChild  
-
-  function activate(target) { 
-    const hash = target.hash;
-    const anchors = target.closest('.tab_head_title')
-    .querySelectorAll('.tab_head_title a');  
+    /* ============== 1번 ============== */
+window.addEventListener('DOMContentLoaded',function(){
+    var tab = document.querySelector('.sub2_tab')
+    var tabBtn = tab.querySelectorAll('.tab_head a');
+    var tabCon = tab.querySelectorAll('.tab_content > div');
     
-    Array.from(anchors).forEach(v => v.className = '');  
-    Array.from(tabContentEl.children).forEach(v => v.style.display = 'none'); 
-    tabContentEl.querySelector(hash).style.display = '';  
-    target.className = 'active';
-  } 
-
-  const handleHash = () => { 
-    if (location.hash) {  
-      const selector = `a[href="${location.hash}"]`;  
-      activate(document.querySelector(selector)); 
-    } else {
-      activate(firstTabEl); 
+    for(let ix=0;ix<tabBtn.length;ix++){
+        tabBtn[ix].addEventListener('click',function(){
+            history.pushState({tab:ix},'tab','#'+ix);            
+            tabFun(ix);            
+        });
+    };     
+    function tabFun(ix){
+        event.preventDefault();
+        for(var i=0; i<tabBtn.length; i++){
+            tabBtn[i].classList.remove('active');
+            tabCon[i].classList.remove('active');   
+        }        
+        tabBtn[ix].classList.add('active');
+        tabCon[ix].classList.add('active');
     }
-  }
+    
+    window.addEventListener('popstate',function(){
+        var state;
+        try{
+            state = history.state.tab;
+        }catch{
+            state = 0;
+        }
+        tabFun(state);
+    });
+});
 
-  window.addEventListener('hashchange', handleHash);  
-  handleHash(); 
-}
+    
+    </script>
 
-createTabs('.sub2_tab');  
-</script>
 
 </body>
 </html>

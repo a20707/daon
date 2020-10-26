@@ -1629,13 +1629,14 @@ main .sub3_2> p:nth-of-type(2){
     padding:15px;
     margin:2% 0;
 }
-main .sub3_2>a{
+main .sub3_2 .submit{
     display:inline-block;
     padding:20px 40px;
     margin:2% 0;
     background:#00b2ca;
     color:#fff;
     font-weight:700;
+    border:none;
 }
 
 /*======================sub4======================*/

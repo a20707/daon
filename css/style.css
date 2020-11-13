@@ -1771,6 +1771,13 @@ main .sub4_1 div figure figcaption div:nth-of-type(2)>a:hover{
 header>div:nth-of-type(1) nav ul li>a{
     padding: 0 10px;
 }
+    
+main .main_res div {
+    display:block;
+    text-align: center;
+}
+    
+    
 .sub1_2_main .slide .text_info p,.sub1_2_main .slide .text_info p:nth-of-type(1){
         font-size:.9em;
 }  
@@ -1870,8 +1877,6 @@ main > section {
     
 @keyframes rollingh2 {0%{opacity: 1;} }
 @keyframes rollingp {0%{opacity: 1;} }
-
-
 
 
 /*2.예약하기*/

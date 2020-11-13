@@ -1239,6 +1239,7 @@ main .sub1_1_2{
     margin-right:3%;}
 
 .s12_popdiv ul li:nth-of-type(3){margin-right:0 !important;}
+
 .s12_popdiv ul li p:nth-of-type(1){
     font-size:1.5em;
     font-weight:700;
@@ -2058,7 +2059,42 @@ main .sub1_1 ul li:nth-of-type(1):before,main .sub1_1 ul li:nth-of-type(2):befor
     
 /*서브1-2 페이지 상세*/
 
+.sub1_2_main .text_info {
+    width: 30vw;
+    height: 30vw;
+}    
+.sub1_2_main .text_info p{
+        font-size:.8em;
+    }    
+.sub1_2_main .text_info a{
+    font-size:.8em;
+    margin-top: 1%;
+    padding: 5px;
+    
+    }
+    
 
+    .s12_popdiv ul {
+        display:block;
+    }
+    .s12_popdiv ul li{
+        width:100%;
+    }
+    .s12_popdiv ul li p {
+        font-size:.8em;
+    }
+.s12_popdiv ul li p:nth-of-type(1){
+        display: block;
+    font-size: 1em;
+    height: auto;
+}
+.s12_popdiv ul li p:nth-of-type(2){    
+
+    padding:5px 0;
+    line-height:1em;
+}    
+    
+    
 
 /*서브1_3 객실*/
 main .sub1_2_3 {
